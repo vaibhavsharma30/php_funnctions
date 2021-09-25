@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+      .box {
+        background-color: rgb(240, 224, 137);
+        width: 350px;
+        float: left;
+        margin-left: 120px;
+        border-radius: 20px;
+        height: 400px;
+        width: 300px;
+        border: 3px solid black;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+        margin-bottom: 50px;
+        float: left;
+        margin-left: 60px;
+        
+      }
+      .box h3,h4{
+          padding-left: 20px;
+          font-size: 1.3rem;
+      }
+      .box input{
+          align-items: center;
+          height: 30px;
+          width: 200px;
+          margin-left: 45px;
+          border: 2px solid black;
+          border-radius: 5px;
+      }
+      
+      .button{
+          
+          width: 100px;
+          height: 25px;
+          font-size: 17px;
+          border-radius: 10px;
+          margin-top: 20px;
+                   
+      }
+      .replace h3,h4{
+          padding-left: 20px;
+          font-size: 1.1rem;
+      }
+      .replace input{
+          align-items: center;
+          height: 25px;
+          width: 200px;
+          margin-left: 45px;
+          border: 2px solid black;
+          border-radius: 5px;
+      }
+      .replace{
+        background-color: rgb(240, 224, 137);
+        width: 350px;
+        float: left;
+        margin-left: 120px;
+        border-radius: 20px;
+        height: 400px;
+        width: 300px;
+        border: 3px solid black;
+        box-shadow: rgba(0, 0, 0, 0.35) 15px 5px 15px;
+        
+        float: left;
+        margin-left: 60px;
+        
+      }
+      
+    </style>
+  </head>
+  <body style="background-color:rgb(202, 202, 202)">
+    <h1
+      style="
+      margin-top: 0;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 1000px;
+        margin-left: 270px;
+      
+       
+      "
+    >
+      Try Working of various Functions of PHP here
+    </h1>
+    <form name="frmreg" method="post" action="main.php">
+      <div class="box">
+        <h3>Enter String to see Working of md5()</h3>
+        <input type="text" name="md5" />
+        <input type="submit" name="submitmd" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter Number to see Working of number_format()</h3>
+        <input type="text" name="nf" />
+        <input type="submit" name="submitnf" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter character to see Working of ord()</h3>
+        <input type="text" name="ord" />
+        <input type="submit" name="submitord" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of rtrim()</h3>
+        <input type="text" name="rtrim" />
+        <h4>Enter charlist</h4>
+        <input type="text" name="charlist" />
+        <input type="submit" name="submitrtrim" class="button" />
+      </div>
+      <div class="replace" >
+        <h3>Enter String to see Working of str_replace()</h3>
+        <input type="text" name="main_str" />
+
+        <h4>Enter the word you want to replace in string</h4>
+        <input type="text" name="replace_str" />
+        <h4>Enter the word by whch you want to replace</h4>
+        <input type="text" name="new_str" />
+        <input type="submit" name="submitreplace" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of strlen()</h3>
+        <input type="text" name="strlen" />
+
+        <input type="submit" name="submitstrlen" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String 1 to see Working of strnatcasecmp())</h3>
+        <input type="text" name="strcmp" />
+
+        <h4>Enter String 2 for comparision</h4>
+        <input type="text" name="strcmp2" />
+
+        <input type="submit" name="submitstrcmp" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of strpos()</h3>
+        <input type="text" name="strpos" />
+
+        <h4>Enter the word you want to find in string</h4>
+        <input type="text" name="strpos2" />
+
+        <input type="submit" name="submitstrpos" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of substr()</h3>
+        <input type="text" name="substr" />
+
+        <h4>Enter the position from where you want to make sub str.</h4>
+        <input type="text" name="substr2" />
+
+        <input type="submit" name="submitsubstr" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of strtolower()</h3>
+        <input type="text" name="strtolower" />
+
+        <input type="submit" name="submitlower" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of bin2hex()</h3>
+        <input type="text" name="bin2hex" />
+
+        <input type="submit" name="submitbin2hex" class="button" />
+      </div>
+      <div class="box">
+        <h3>Enter String to see Working of chop()</h3>
+        <input type="text" name="chop" />
+
+        <h4>Enter the word you want to chop</h4>
+        <input type="text" name="chop1" />
+
+        <input type="submit" name="submitchop" class="button" />
+      </div>
+    </form>
+    <footer>
+      <h3 style="color: black; text-align: center; ">Assignment done by Vaibhav Sharma </h3>
+    </footer>
+  </body>
+</html>
